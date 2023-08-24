@@ -3,22 +3,22 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
+title: 海边的木子
+subtitle: '连接真实，连接过去'
+description: '我是一个很年轻的人，目前正处于奔三的早期阶段。作为无数这个年龄段的人中的一份子，我时常迷茫、焦虑，不知道路在何方但又往往醉生梦死。博客的名字「海边的木子」和我的昵称来自我最爱的人，这是我在纷攘世界的一丝慰藉。请在[关于](/about/)界面留言！'
 keywords:
-author: John Doe
-language: en
-timezone: ''
+author: Oceanic
+language: zh-CN
+timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
-permalink: :year/:month/:day/:title/
+url: https://blog.oceanum.top
+permalink: :year:month:day:hour:minute/
 permalink_defaults:
 pretty_urls:
-  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
-  trailing_html: true # Set to false to remove trailing '.html' from permalinks
+  trailing_index: false # Set to false to remove trailing 'index.html' from permalinks
+  trailing_html: false # Set to false to remove trailing '.html' from permalinks
 
 # Directory
 source_dir: source
@@ -97,7 +97,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: cactus
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
