@@ -1,4 +1,7 @@
-on: [repository_dispatch, watch, workflow_dispatch]
+on: 
+  schedule:
+  - cron: "0 6 * * *"
+  workflow_dispatch:
 
 name: notion2hexo
 
