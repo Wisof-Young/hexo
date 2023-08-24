@@ -1,4 +1,4 @@
-on: [repository_dispatch, watch]
+on: [repository_dispatch, watch, workflow_dispatch]
 
 name: notion2hexo
 
