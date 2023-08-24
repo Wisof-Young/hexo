@@ -20,7 +20,7 @@ jobs:
         access_key_id: "${{ secrets.ALI_ID }}"
         access_key_secret: "${{ secrets.ALI_SECRET }}"
         bucket: "oceanum"
-        area: "${{ inputs.oss_endpoint }}"
+        area: "oss-cn-chengdu"
         prefix: "image/"
 
     - name: git setting
