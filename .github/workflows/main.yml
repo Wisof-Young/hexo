@@ -17,8 +17,8 @@ jobs:
       with:
         notion_secret: ${{ secrets.NOTION_TOKEN }}
         database_id: "05fd4294d7474b1c800f67437400cca2"
-        status_published: "published"
-        status_unpublish: "unpublish"
+        status_published: "已发布"
+        status_unpublish: "未发布"
         output: "./source/_posts/"
         access_key_id: "${{ secrets.ALI_ID }}"
         access_key_secret: "${{ secrets.ALI_SECRET }}"
