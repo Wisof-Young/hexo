@@ -641,7 +641,7 @@ post:
   # 版权声明，会显示在每篇文章的结尾
   # Copyright, will be displayed at the end of each post
   copyright:
-    enable: true
+    enable: false
 
     # CreativeCommons license
     # Options: BY | BY-SA | BY-ND | BY-NC | BY-NC-SA | BY-NC-ND
@@ -666,7 +666,7 @@ post:
   # 文章底部上一篇下一篇功能
   # Link to previous/next post
   prev_next:
-    enable: true
+    enable: false
 
   # 文章图片标题
   # Image caption
