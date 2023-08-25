@@ -6,6 +6,7 @@ tags:
   - 工具使用
 title: ChatGPT 资源收集（持续更新）
 status: 未发布
+index_img: https://images.unsplash.com/photo-1684487747720-1ba29cda82f8?ixlib=rb-4.0.3&q=50&fm=webp&crop=entropy&cs=srgb&width=400&fmt=webp
 ---
 
 # 资源汇总
