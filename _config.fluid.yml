@@ -224,8 +224,8 @@ color:
 # 主题字体配置
 # Font
 font:
-  font_size: 16px
-  font_family: serif
+  font_size: 17px
+  font_family: 'LXGW WenKai Screen'
   letter_spacing: 0.02em
   code_font_size: 85%
 
@@ -235,8 +235,8 @@ custom_js:
 
 # 指定自定义 .css 文件路径，用法和 custom_js 相同
 # The usage is the same as custom_js
-# custom_css: /css/custom.css
-# custom_head: <link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css" media="print" onload="this.media='all'">
+custom_css: /css/custom.css
+custom_head: <link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css" media="print" onload="this.media='all'">
 
 # 网页访问统计
 # Analysis of website visitors
@@ -1004,22 +1004,28 @@ links:
   # Member item of page
   items:
     - {
-      title: "Fluid Blog",
-      intro: "主题博客",
-      link: "https://hexo.fluid-dev.com/",
-      avatar: "/img/favicon.png"
+      title: "To the Lighthouse",
+      intro: "..A Touch and yet not a touch",
+      link: "https://owlswims.com/",
+      avatar: ""
     }
     - {
-      title: "Fluid Docs",
-      intro: "主题使用指南",
-      link: "https://hexo.fluid-dev.com/docs/",
-      avatar: "/img/favicon.png"
+      title: "树的漫长岁月",
+      intro: "",
+      link: "https://shuspace.cn/",
+      avatar: ""
     }
     - {
-      title: "Fluid Repo",
-      intro: "主题 GitHub 仓库",
-      link: "https://github.com/fluid-dev/hexo-theme-fluid",
-      avatar: "/img/favicon.png"
+      title: "记录美好生活",
+      intro: "人生路上的点点滴滴都值得记录和回忆！",
+      link: "https://hux6.com/",
+      avatar: "https://cdn.hux6.com/blog/typecho/202308031533733.png"
+    }
+    - {
+      title: "Shuzang's Blog",
+      intro: "随心所向，素履以往",
+      link: "https://shuzang.github.io/",
+      avatar: "https://shuzang.github.io/images/avatar.png"
     }
 
   # 当成员头像加载失败时，替换为指定图片
