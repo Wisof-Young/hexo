@@ -1007,13 +1007,13 @@ links:
       title: "To the Lighthouse",
       intro: "..A Touch and yet not a touch",
       link: "https://owlswims.com/",
-      avatar: ""
+      avatar: "/img/avatar.png"
     }
     - {
       title: "树的漫长岁月",
       intro: "",
       link: "https://shuspace.cn/",
-      avatar: ""
+      avatar: "/img/avatar.png"
     }
     - {
       title: "记录美好生活",
