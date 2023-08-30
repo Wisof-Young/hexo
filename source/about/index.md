@@ -1,7 +1,7 @@
 ---
 title: 我
 date: 2023-08-24 20:30:44
-comments: 'twikoo'
+comment: twikoo
 layout: about
 ---
 
