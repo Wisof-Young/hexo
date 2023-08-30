@@ -83,7 +83,7 @@ fun_features:
   # 为 subtitle 添加打字机效果
   # Typing animation for subtitle
   typing:
-    enable: true
+    enable: false
 
     # 打印速度，数字越大越慢
     # Typing speed, the larger the number, the slower
@@ -748,7 +748,7 @@ post:
 # Based on GitHub Issues
 # See: https://utteranc.es
 utterances:
-  repo:
+  repo: Wisof-Young/hexo
   issue_term: pathname
   label: utterances
   theme: github-light
@@ -1107,7 +1107,7 @@ static_prefix:
 
   disqusjs: https://lib.baomitu.com/disqusjs/1.3.0/
 
-  twikoo: https://lib.baomitu.com/twikoo/1.6.17/
+  twikoo: https://lib.baomitu.com/twikoo/1.6.8/
 
   discuss: https://lib.baomitu.com/discuss/1.2.1/
 
