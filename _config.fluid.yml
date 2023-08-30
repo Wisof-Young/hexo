@@ -1025,13 +1025,49 @@ links:
       title: "记录美好生活",
       intro: "人生路上的点点滴滴都值得记录和回忆！",
       link: "https://hux6.com/",
-      avatar: ""
+      avatar: "https://cdn.hux6.com/blog/typecho/202308031533733.png"
     }
     - {
       title: "Shuzang's Blog",
       intro: "随心所向，素履以往",
       link: "https://shuzang.github.io/",
       avatar: "https://shuzang.github.io/images/avatar.png"
+    }
+    - {
+      title: "Wonder Space",
+      intro: "不可勝在己，可勝在敵",
+      link: "https://l3on.site",
+      avatar: "https://l3on.site/avatar.webp"
+    }
+    - {
+      title: "Leo's Blog",
+      intro: "THIS IS MY STORY.",
+      link: "https://www.isolitude.cn/",
+      avatar: "https://s1.ax1x.com/2020/04/18/JnAGbF.jpg"
+    }
+    - {
+      title: "雅余",
+      intro: "记录我的成长和青春",
+      link: "http://liis.cc",
+      avatar: "http://liis.cc/hy.png"
+    }
+    - {
+      title: "Free Mind",
+      intro: "We are drowning in information and starving for knowledge.",
+      link: "https://freemind.pluskid.org/",
+      avatar: ""
+    }
+    - {
+      title: "HY's Travel Blog",
+      intro: "台灣台中人，長居台北，現旅美求學中。在這片小天地紀錄關於海外旅行的回憶。",
+      link: "https://bevis822.wordpress.com/",
+      avatar: ""
+    }
+    - {
+      title: "MOOKIO 阿默",
+      intro: "",
+      link: "https://blog.mookio.net/",
+      avatar: ""
     }
 
   # 当成员头像加载失败时，替换为指定图片
