@@ -83,7 +83,7 @@ fun_features:
   # 为 subtitle 添加打字机效果
   # Typing animation for subtitle
   typing:
-    enable: false
+    enable: true
 
     # 打印速度，数字越大越慢
     # Typing speed, the larger the number, the slower
@@ -224,8 +224,8 @@ color:
 # 主题字体配置
 # Font
 font:
-  font_size: 17px
-  font_family: 'LXGW WenKai Screen'
+  font_size: 16px
+  font_family: ''
   letter_spacing: 0.02em
   code_font_size: 85%
 
@@ -235,8 +235,7 @@ custom_js:
 
 # 指定自定义 .css 文件路径，用法和 custom_js 相同
 # The usage is the same as custom_js
-custom_css: /css/custom.css
-custom_head: <link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css" media="print" onload="this.media='all'">
+custom_css: 
 
 # 网页访问统计
 # Analysis of website visitors
@@ -343,12 +342,19 @@ navbar:
   # Navigation bar menu. `key` is used to associate languages/*.yml. If there is no association, the value of `key` itself will be displayed; if `icon` is a css class, it can be omitted; adding `name` can force the display of the specified name
   menu:
     - { key: "home", link: "/", icon: "iconfont icon-home-fill" }
-    - { key: "archive", link: "/archives/", icon: "iconfont icon-archive-fill" }
+    - { key: "文章", link: "/archives/", icon: "iconfont icon-pen" }
     - { key: "category", link: "/categories/", icon: "iconfont icon-category-fill" }
     - { key: "tag", link: "/tags/", icon: "iconfont icon-tags-fill" }
     - { key: "about", link: "/about/", icon: "iconfont icon-user-fill" }
-    - { key: "观影", link: "/movies/", icon: "iconfont icon-douban-fill" }
-    - { key: "阅读", link: "/books/", icon: "iconfont icon-douban-fill" }
+    - {
+      key: '书影',
+      icon: 'iconfont icon-douban-fill',
+      submenu: [
+        { key: '阅读', link: '/books/' },
+        { key: '观影', link: '/movies/' }
+      ]
+    }
+    - { key: '链接', link: '/links/', icon: 'iconfont icon-link-fill' }
 
 # 搜索功能，基于 hexo-generator-search 插件，若已安装其他搜索插件请关闭此功能，以避免生成多余的索引文件
 # Search feature, based on hexo-generator-search. If you have installed other search plugins, please disable this feature to avoid generating redundant index files
@@ -458,7 +464,7 @@ footer:
 index:
   # 首页 Banner 头图，可以是相对路径或绝对路径，以下相同
   # Path of Banner image, can be a relative path or an absolute path, the same on other pages
-  banner_img: /img/default.png
+  banner_img: /img/default.webp
 
   # 头图高度，屏幕百分比
   # Height ratio of banner image
@@ -530,7 +536,7 @@ index:
 # Post Page
 #---------------------------
 post:
-  banner_img: /img/default.png
+  banner_img: /img/default.webp
   banner_img_height: 0
   banner_mask_alpha: 0.3
 
@@ -893,7 +899,7 @@ discuss:
 # Archive Page
 #---------------------------
 archive:
-  banner_img: /img/default.png
+  banner_img: /img/default.webp
   banner_img_height: 50
   banner_mask_alpha: 0.3
 
@@ -904,7 +910,7 @@ archive:
 #---------------------------
 category:
   enable: true
-  banner_img: /img/default.png
+  banner_img: /img/default.webp
   banner_img_height: 0
   banner_mask_alpha: 0.3
 
@@ -933,7 +939,7 @@ category:
 #---------------------------
 tag:
   enable: true
-  banner_img: /img/default.png
+  banner_img: /img/default.webp
   banner_img_height: 0
   banner_mask_alpha: 0.3
   tagcloud:
@@ -950,10 +956,10 @@ tag:
 #---------------------------
 about:
   enable: true
-  banner_img: /img/default.png
+  banner_img: /img/default.webp
   banner_img_height: 0
   banner_mask_alpha: 0.3
-  avatar: /img/avatar.png
+  avatar: /img/avatar.webp
   name: "Oceanic"
   intro: 
   # 更多图标可从 https://hexo.fluid-dev.com/docs/icon/ 查找，`class` 代表图标的 css class，添加 `qrcode` 后，图标不再是链接而是悬浮二维码
@@ -972,7 +978,7 @@ about:
 # Custom Page through `hexo new page`
 #---------------------------
 page:
-  banner_img: /img/default.png
+  banner_img: /img/default.webp
   banner_img_height: 0
   banner_mask_alpha: 0.3
 
@@ -983,7 +989,7 @@ page:
 #---------------------------
 page404:
   enable: true
-  banner_img: /img/default.png
+  banner_img: /img/default.webp
   banner_img_height: 85
   banner_mask_alpha: 0.3
   # 重定向到首页的延迟(毫秒)
@@ -997,7 +1003,7 @@ page404:
 #---------------------------
 links:
   enable: true
-  banner_img: /img/default.png
+  banner_img: /img/default.webp
   banner_img_height: 60
   banner_mask_alpha: 0.3
   # 友链的成员项
@@ -1007,19 +1013,19 @@ links:
       title: "To the Lighthouse",
       intro: "..A Touch and yet not a touch",
       link: "https://owlswims.com/",
-      avatar: "/img/avatar.png"
+      avatar: ""
     }
     - {
       title: "树的漫长岁月",
       intro: "",
       link: "https://shuspace.cn/",
-      avatar: "/img/avatar.png"
+      avatar: ""
     }
     - {
       title: "记录美好生活",
       intro: "人生路上的点点滴滴都值得记录和回忆！",
       link: "https://hux6.com/",
-      avatar: "https://cdn.hux6.com/blog/typecho/202308031533733.png"
+      avatar: ""
     }
     - {
       title: "Shuzang's Blog",
@@ -1035,8 +1041,8 @@ links:
   # 友链下方自定义区域，支持 HTML，可插入例如申请友链的文字
   # Custom content at the bottom of the links
   custom:
-    enable: false
-    content: '<hr><p>在下方留言申请加入我的友链，按如下格式提供信息：</p><ul><li>博客名：Fluid</li><li>简介：Fluid 主题官方博客</li><li>链接：https://hexo.fluid-dev.com</li><li>图片：https://hexo.fluid-dev.com/img/favicon.png</li></ul>'
+    enable: true
+    content: '<hr><p>在下方留言申请加入我的友链，按如下格式提供信息：</p><ul><li>博客名：海边的木子</li><li>简介：连接真实，连接过去</li><li>链接：https://blog.oceanum.top</li><li>图片：https://img.oceanum.top/202307270413176.png</li></ul>'
 
   # 评论插件
   # Comment plugin
@@ -1045,7 +1051,7 @@ links:
     # 指定的插件，需要同时设置对应插件的必要参数
     # The specified plugin needs to set the necessary parameters at the same time
     # Options: utterances | disqus | gitalk | valine | waline | changyan | livere | remark42 | twikoo | cusdis | giscus | discuss
-    type: disqus
+    type: twikoo
 
 
 #---------------------------
@@ -1101,7 +1107,7 @@ static_prefix:
 
   disqusjs: https://lib.baomitu.com/disqusjs/1.3.0/
 
-  twikoo: https://lib.baomitu.com/twikoo/1.6.8/
+  twikoo: https://lib.baomitu.com/twikoo/1.6.17/
 
   discuss: https://lib.baomitu.com/discuss/1.2.1/
 
