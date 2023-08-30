@@ -957,7 +957,7 @@ tag:
 about:
   enable: true
   banner_img: /img/default.webp
-  banner_img_height: 0
+  banner_img_height: 50
   banner_mask_alpha: 0.3
   avatar: /img/avatar.webp
   name: "Oceanic"
