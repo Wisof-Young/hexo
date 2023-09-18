@@ -1069,6 +1069,12 @@ links:
       link: "https://blog.mookio.net/",
       avatar: ""
     }
+    - {
+      title: "产品沉思录",
+      intro: "",
+      link: "https://pmthinking.com/",
+      avatar: "https://images.spr.so/cdn-cgi/imagedelivery/j42No7y-dcokJuNgXeA0ig/97fc1bdc-0fb3-4bd1-b907-3172b3d0cfc7/avatar_light/w=640,quality=80"
+    }
 
   # 当成员头像加载失败时，替换为指定图片
   # When the member avatar fails to load, replace the specified image
