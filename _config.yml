@@ -117,3 +117,9 @@ feed:
   icon: icon.png
   autodiscovery: true
   template:
+
+
+doubanCard:
+  enable: true
+  cookie: ll="118318"; bid=_PjZS--Atno; douban-fav-remind=1; _pk_id.100001.8cb4=02532f83826c29cd.1677053578.; __utmz=30149280.1692111174.5.2.utmcsr=douban.com|utmccn=(referral)|utmcmd=referral|utmcct=/search; _ga_RXNMP372GL=GS1.1.1692537221.1.0.1692537224.57.0.0; _ga=GA1.1.800105353.1692024649; _ga_Y4GN1R87RG=GS1.1.1692723396.2.1.1692723953.0.0.0; _pk_ref.100001.8cb4=%5B%22%22%2C%22%22%2C1692879565%2C%22https%3A%2F%2Fcn.bing.com%2F%22%5D; viewed="30186025_36438791_26712445_11533585_36501378_10471333_35720365_34950149_34928222_25912076"; ap_v=0,6.0; dbcl2="189561860:MoIxV7H71JA"; ck=5-V3; push_noty_num=0; push_doumail_num=0
+  imgProxy: https://images.weserv.nl/?url=
